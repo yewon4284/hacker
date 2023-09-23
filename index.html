@@ -1,0 +1,32 @@
+<style>
+    /* 초기 스타일 */
+    #myButton {
+      background-color: skyblue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+
+<button id="myButton" onclick="changeTextAndColor()">follow</button>
+
+
+
+
+
+<script>
+  function changeTextAndColor() {
+    var button = document.getElementById("myButton");
+    
+    // 텍스트 변경
+    if (button.innerHTML === "follow") {
+      button.innerHTML = "unfollow";
+      button.style.backgroundColor = "red";
+    } else {
+      button.innerHTML = "follow";
+      button.style.backgroundColor = "skyblue";
+    }
+}
+</script>
+
